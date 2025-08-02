@@ -13,6 +13,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   </head>
 
   <body>
@@ -43,9 +44,17 @@
       <div id="productsContainer" class="products-grid"></div>
 
       <!-- Selected Products -->
+      <!-- index.html 中 “Selected Products” 部分内新增一行按钮： -->
       <div class="selected-products">
         <h2>Selected Products</h2>
         <div id="selectedProductsList"></div>
+        <button
+          id="clearAllBtn"
+          class="generate-btn"
+          style="background: #e3a535; margin-top: 10px"
+        >
+          <i class="fa-solid fa-trash"></i> Clear All
+        </button>
         <button id="generateRoutine" class="generate-btn">
           <i class="fa-solid fa-wand-magic-sparkles"></i> Generate Routine
         </button>
@@ -86,7 +95,6 @@
     </div>
 
     <!-- secrets.js can be removed when using Cloudflare Workers for API requests -->
-    <script src="secrets.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
