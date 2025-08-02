@@ -253,3 +253,83 @@ body {
 .generate-btn i {
   margin-right: 8px;
 }
+
+/* 卡片选中高亮 */
+.product-card.selected {
+  border: 2px solid #ff003b;
+  background: #fff7f9;
+}
+
+/* 选中产品项样式 */
+.selected-item {
+  background: #f0f0f0;
+  padding: 6px 12px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.selected-item button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #ff003b;
+}
+
+/* 聊天气泡布局 */
+.chat-msg {
+  max-width: 70%;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  border-radius: 18px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+/* 用户消息（右侧） */
+.chat-msg.user {
+  background-color: #e3a535;
+  color: #000;
+  align-self: flex-end;
+  border-bottom-right-radius: 4px;
+  margin-left: auto;
+  text-align: left;
+}
+
+/* AI 消息（左侧） */
+.chat-msg.bot {
+  background-color: #f1f1f1;
+  color: #333;
+  align-self: flex-start;
+  border-bottom-left-radius: 4px;
+  margin-right: auto;
+  text-align: left;
+}
+
+/* 确保 chat-window 是纵向堆叠 + 气泡可对齐 */
+.chat-window {
+  display: flex;
+  flex-direction: column;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 1.4em;
+  margin-bottom: 10px;
+}
+
+.markdown-body li {
+  margin-bottom: 6px;
+}
+
+.markdown-body strong {
+  font-weight: bold;
+  color: #222;
+}
